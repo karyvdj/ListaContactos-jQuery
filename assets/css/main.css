@@ -1,0 +1,40 @@
+body{
+  padding: 130px;
+}
+.navbar{
+  padding: 20px;
+  background: #4a4653;
+}
+.navbar-header .navbar-brand{
+  color: white;
+}
+.input-group{
+  margin: 30px;
+}
+ .navbar-btn {
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  margin: 10px;
+}
+.navbar-btn:hover{
+  background:#40adc1;
+  border: 1px solid #40adc1;
+  color: #4a4653;
+}
+.modal-content{
+  background:#40adc1;
+  color:white;
+}
+/*.contenedorContacto{
+  width: 70%;
+  height: 100px;
+  background:rgb(207, 185, 242);
+}*/
+.modal-footer>button{
+  border-radius: 20px;
+}
+.borrar{
+  text-align: right;
+}

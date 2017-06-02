@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header class="navbar navbar-inverse navbar-fixed-top">
+      <nav class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">CONTACTOS</a>
+        </div>
+        <div class="navbar-collapse collapse" aria-expanded="false">
+          <button type="button" name="button" class="btn navbar-btn navbar-right">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            Buscar
+          </button>
+          <button name="button" type="button" data-toggle="modal" data-target="#myModal" class="btn navbar-btn navbar-right">
+            <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+            Agregar
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- modal -->
+    <article class="modal fade" tabindex="-1" role="dialog" id="myModal">
+      <section class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Nuevo Contacto</h4>
+          </div>
+          <div class="modal-body row">
+            <form class="form-group col-sm-8 col-sm-offset-2">
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </div>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+              </div>
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                </div>
+                <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal" id="agregar">Agregar</button>
+            <button type="button" class="btn">Cancelar</button>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article id="nuevoContacto">
+
+    </article>
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
