@@ -5,10 +5,10 @@ $(document).ready(function(){
     var $obtenerTelefono = $("#telefono").val();
 
     // creamos elementos
-    var $contenedorContacto = $("<section/>")
-    var $nombreNuevo = $("<p/>");
-    var $telefonoNuevo = $("<p/>");
-    var $botonBorrar = $("<button><span class='glyphicon glyphicon-trash'></span></button>", {"class":'borrar'});
+    var $contenedorContacto = $("<div/>", {"class":"row"})
+    var $nombreNuevo = $("<p/>", {"class":"col-xs-8 col-xs-offset-1"});
+    var $telefonoNuevo = $("<p/>", {"class":"col-xs-8 col-xs-offset-1"});
+    var $botonBorrar = $("<button class='borrar btn'><span class='glyphicon glyphicon-trash'></span></button>");
 
     $botonBorrar.click(function(){
       $(this).parent().remove();
@@ -20,9 +20,9 @@ $(document).ready(function(){
 
 
     // agregamos los elementos
-    $contenedorContacto.append($botonBorrar);
     $contenedorContacto.append($nombreNuevo);
     $contenedorContacto.append($telefonoNuevo);
+    $contenedorContacto.append($botonBorrar);
 
     $nuevoContacto.prepend($contenedorContacto);
 
@@ -30,7 +30,15 @@ $(document).ready(function(){
     $("#telefono").val("");
     $("#myModal").modal("hide");
 
-    // $("#agregar").attr("disabled", true);
+		$("#agregar").attr("disabled");
 
+
+
+  });
+
+  $("#cancelar").click(function(){
+    $("#nombre").val("");
+    $("#telefono").val("");
+    $("#myModal").modal("hide");
   });
 });

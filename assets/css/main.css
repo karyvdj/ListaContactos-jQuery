@@ -1,11 +1,11 @@
 body{
-  padding: 130px;
+  padding-top: 120px;
 }
 .navbar{
   padding: 20px;
   background: #4a4653;
 }
-.navbar-header .navbar-brand{
+.navbar-header .navbar-brand, .white{
   color: white;
 }
 .input-group{
@@ -24,17 +24,45 @@ body{
   color: #4a4653;
 }
 .modal-content{
-  background:#40adc1;
+  background:#50C4D6;
   color:white;
 }
-/*.contenedorContacto{
-  width: 70%;
-  height: 100px;
-  background:rgb(207, 185, 242);
-}*/
-.modal-footer>button{
+.modal-content input{
+  border: 0px;
+}
+.input-group-addon{
+  background: #D1F0F7;
+  border-radius: 20px;
+  border: 0px;
+}
+.jumbotron{
+  background: #D5F0EF;
+  margin-top: 30px;
   border-radius: 20px;
 }
+.modal-footer>button{
+  border-radius: 20px;
+  border: 1px solid #B3D51B;
+  background: #B3D51B;
+}
+.modal-footer>button:last-child{
+  background: #F19405;
+  border: 1px solid #F19405;
+}
+.modal-footer>button:hover{
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+}
 .borrar{
-  text-align: right;
+  border-radius: 10px;
+  padding: 10px;
+  background: #71CFD5;
+  color: #017178;
+}
+.numContactos{
+  margin-right: 150px;
+}
+.numContactos:hover{
+  color: #40adc1;
 }

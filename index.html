@@ -21,7 +21,7 @@
           <a href="#" class="navbar-brand">CONTACTOS</a>
         </div>
         <div class="navbar-collapse collapse" aria-expanded="false">
-          <button type="button" name="button" class="btn navbar-btn navbar-right">
+          <button type="button" name="button" class="btn navbar-btn active navbar-right">
             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
             Buscar
           </button>
@@ -31,6 +31,7 @@
           </button>
         </div>
       </nav>
+      <a href="#" class="white navbar-right numContactos">Contactos<span class="badge" id="numContactos">1</span></a>
     </header>
     <!-- modal -->
     <article class="modal fade" tabindex="-1" role="dialog" id="myModal">
@@ -58,15 +59,21 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn" data-dismiss="modal" id="agregar">Agregar</button>
-            <button type="button" class="btn">Cancelar</button>
+            <button type="button" class="btn" id="cancelar">Cancelar</button>
           </div>
         </div>
       </section>
     </article>
-
-    <article id="nuevoContacto">
-
-    </article>
+<!-- ejemplo de contacto nuevo ingrasado-->
+    <section id="nuevoContacto" class="container jumbotron">
+      <div class="row">
+        <p class="col-xs-8 col-xs-offset-1">Karina</p>
+        <p class="col-xs-8 col-xs-offset-1">55 18 82 15</p>
+        <button class='borrar btn'>
+          <span class='glyphicon glyphicon-trash'></span>
+        </button>
+      </div>
+    </section>
 
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/main.js"></script>
